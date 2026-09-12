@@ -1,11 +1,11 @@
 <div align="center">
-  <h1>🚀 VirtualMouse (OcculoCommand)</h1>
+  <h1>🚀 VirtualMouse</h1>
   <p><b>Revolutionizing Human-Computer Interaction</b></p>
   <p>Control your entire PC hands-free using Advanced AI Facial Tracking & Zero-Delay Voice Dictation.</p>
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
-  [![Developer](https://img.shields.io/badge/Developed_by-Siddharth_Kumar-ec4899.svg)](#)
+  [![Developer](https://img.shields.io/badge/Developed_by-Sidharth_Kumar-ec4899.svg)](#)
 </div>
 
 ---
@@ -63,7 +63,7 @@ This project includes a **Futuristic Landing Page** designed to showcase the app
 ---
 
 ## 👨‍💻 Developer
-**Developed by Siddharth Kumar**  
+**Developed by Sidharth Kumar**  
 Contact: [siddharthkr170@gmail.com](mailto:siddharthkr170@gmail.com)
 
 ## 📜 License
