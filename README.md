@@ -57,7 +57,7 @@ Designed, developed, and optimized specifically for **BHARAT**.
 
 ## 🌐 Premium Website
 This project includes a **Futuristic Landing Page** designed to showcase the app.
-- Open `https://virtual-mouse-two.vercel.app/` in your browser.
+- Open [`https://virtual-mouse-two.vercel.app/`](https://virtual-mouse-two.vercel.app/) in your browser.
 - Contains 8K Cinematic Animated Backgrounds, a detailed Commands Guide, and an App Download portal.
 
 ---
