@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="VirtualMouse - Control your computer using facial gestures and eyes. 100% Local AI.">
+    <title>VirtualMouse | Control with your Eyes</title>
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div id="cursor-trailer"></div>
+
+    <!-- Interactive Background -->
+    <canvas id="particle-canvas"></canvas>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/logo.png" alt="VirtualMouse Logo" class="logo-img">
+            <div>Virtual<span>Mouse</span></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#download">Download</a></li>
+        </ul>
+        <button class="nav-btn" onclick="scrollToDownload()">Download Now</button>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="glitch-wrapper">
+                <span class="glitch-text" data-text="Control Your PC with">Control Your PC with</span>
+                <span class="gradient-text glitch-text" data-text="Your Eyes">Your Eyes</span>
+            </h1>
+            <p>Experience the future of human-computer interaction. A completely hands-free, AI-powered virtual mouse
+                that runs locally on your machine.</p>
+            <div class="cta-group">
+                <button class="primary-btn glow-effect" onclick="scrollToDownload()">
+                    Download for Windows <span class="icon">⬇</span>
+                </button>
+                <button class="secondary-btn"
+                    onclick="document.getElementById('commands').scrollIntoView({behavior: 'smooth'})">See How it
+                    Works</button>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="glass-card main-card">
+                <div class="card-header">
+                    <div class="dot red"></div>
+                    <div class="dot yellow"></div>
+                    <div class="dot green"></div>
+                </div>
+                <div class="card-body">
+                    <div class="tracking-demo cute-face">
+                        <img src="assets/logo.png" class="tracking-logo" alt="Background Logo">
+                        <div class="ear left-ear"></div>
+                        <div class="ear right-ear"></div>
+                        <div class="eye left-eye"></div>
+                        <div class="eye right-eye"></div>
+                        <div class="blush left-blush"></div>
+                        <div class="blush right-blush"></div>
+                        <div class="cursor-pointer"></div>
+                        <div class="mouth"></div>
+                    </div>
+                    <p class="status">Tracking Active</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="features reveal">
+        <h2><span class="gradient-text">Next-Gen</span> Capabilities</h2>
+        <p class="section-subtitle">Experience the pinnacle of localized AI inference directly on your machine.</p>
+        <div class="bento-grid">
+            <div class="bento-card tilt-card wide-card">
+                <div class="card-content">
+                    <div class="badge glow-badge">100% Local AI</div>
+                    <h3>Absolute Precision Tracking</h3>
+                    <p>Advanced local AI maps 468 facial landmarks in real-time. Navigate your screen seamlessly using
+                        intuitive micro-movements of your head, offering unmatched accuracy and responsiveness at zero
+                        latency.</p>
+                </div>
+                <div class="card-image-wrapper">
+                    <img src="assets/face_tracking_nextgen.jpg" alt="AI Face Tracking" class="bento-img">
+                </div>
+            </div>
+            <div class="bento-card tilt-card">
+                <div class="card-image-wrapper">
+                    <img src="assets/voice_ai_waveform.jpg" alt="Voice AI Visualization" class="bento-img">
+                </div>
+                <div class="card-content">
+                    <div class="badge">VAD Technology</div>
+                    <h3>Zero-Delay Voice Control</h3>
+                    <p>Ultra-fast, intelligent dictation with our custom Voice Activity Detector. Speak naturally to
+                        scroll, type, and command your system.</p>
+                </div>
+            </div>
+            <div class="bento-card tilt-card">
+                <div class="card-image-wrapper">
+                    <img src="assets/neural_processing_abstract.jpg" alt="Neural Processing" class="bento-img">
+                </div>
+                <div class="card-content">
+                    <div class="badge">Neural Engine</div>
+                    <h3>Edge Processing</h3>
+                    <p>Harness the power of on-device neural processing. No internet required after the initial setup,
+                        ensuring complete privacy and maximum performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="use-cases" class="use-cases reveal">
+        <h2><span class="gradient-text">Unlock</span> New Possibilities</h2>
+        <p class="section-subtitle">Designed for every workflow. Here is how VirtualMouse transforms your daily computer
+            interaction.</p>
+        <div class="use-case-container">
+            <div class="use-case-card glass-card hover-glow">
+                <div class="icon">🎮</div>
+                <h3>Immersive Gaming</h3>
+                <p>Map facial expressions to in-game actions. Reload with a wink, scroll inventory by opening your
+                    mouth, and experience truly immersive gameplay without lifting a finger.</p>
+            </div>
+            <div class="use-case-card glass-card hover-glow">
+                <div class="icon">♿</div>
+                <h3>Ultimate Accessibility</h3>
+                <p>Empowering users with mobility challenges. Full OS navigation, typing, and clicking seamlessly
+                    handled through head movements and voice dictation.</p>
+            </div>
+            <div class="use-case-card glass-card hover-glow">
+                <div class="icon">🚀</div>
+                <h3>Hyper Productivity</h3>
+                <p>Keep your hands glued to the keyboard for coding or typing while you scroll through documentation and
+                    switch tabs using your eyes and voice.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="commands" class="commands-guide reveal">
+        <h2>Command Guide</h2>
+        <div class="tables-container">
+            <div class="command-table">
+                <h3>🖱️ Mouse Tracking Commands</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Action</th>
+                            <th>Gesture</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>System ON / OFF</td>
+                            <td>Close BOTH eyes for 1.2 seconds</td>
+                        </tr>
+                        <tr>
+                            <td>Move Cursor</td>
+                            <td>Move your nose slightly (High Sensitivity)</td>
+                        </tr>
+                        <tr>
+                            <td>Left Click</td>
+                            <td>Wink Left Eye</td>
+                        </tr>
+                        <tr>
+                            <td>Double Click</td>
+                            <td>Wink Left Eye twice quickly</td>
+                        </tr>
+                        <tr>
+                            <td>Right Click</td>
+                            <td>Wink Right Eye</td>
+                        </tr>
+                        <tr>
+                            <td>Drag / Select Text</td>
+                            <td>Wink and HOLD Left Eye for 0.5s</td>
+                        </tr>
+                        <tr>
+                            <td>Scroll Up/Down</td>
+                            <td>Open Mouth + Look Up/Down</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="command-table">
+                <h3>🎙️ Voice Keyboard Commands</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Voice Command</th>
+                            <th>Action Executed</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>"Keyboard On"</td>
+                            <td>Activates Voice Control (Disables mouth scroll)</td>
+                        </tr>
+                        <tr>
+                            <td>"Keyboard Off"</td>
+                            <td>Deactivates Voice Control</td>
+                        </tr>
+                        <tr>
+                            <td>"Scroll Down" / "Page Down"</td>
+                            <td>Scrolls half a page down</td>
+                        </tr>
+                        <tr>
+                            <td>"Scroll Up" / "Page Up"</td>
+                            <td>Scrolls half a page up</td>
+                        </tr>
+                        <tr>
+                            <td>"Delete" / "Delete Word"</td>
+                            <td>Deletes the last complete word</td>
+                        </tr>
+                        <tr>
+                            <td>"Backspace"</td>
+                            <td>Deletes a single letter</td>
+                        </tr>
+                        <tr>
+                            <td>"Enter" / "New Line"</td>
+                            <td>Presses the Enter key</td>
+                        </tr>
+                        <tr>
+                            <td>"Select All" / "Copy" / "Paste"</td>
+                            <td>Performs standard shortcuts (Ctrl+A/C/V)</td>
+                        </tr>
+                        <tr>
+                            <td>(Anything else)</td>
+                            <td>Types the dictated sentence normally</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="download-section reveal">
+        <div class="download-card">
+            <h2>Ready to go hands-free?</h2>
+            <p>Download the standalone Windows App or get the Python source code.</p>
+            <div class="download-options">
+                <a href="assets/VirtualMouseApp.exe" download="VirtualMouseApp.exe" class="primary-btn pulse-effect">
+                    Download .EXE (Windows)
+                </a>
+                <a href="https://github.com/sidharthkr-cse/VirtualMouse" target="_blank" class="secondary-btn">
+                    View on GitHub
+                </a>
+            </div>
+            <p class="note">* Note: First run requires internet to download the AI model and initialize Voice API.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>VirtualMouse</h3>
+                <p>Revolutionizing Human-Computer Interaction.</p>
+                <p>Developed by <strong>Siddharth Kumar</strong></p>
+                <p>Contact: <a href="mailto:siddharthkr170@gmail.com">siddharthkr170@gmail.com</a></p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="https://github.com/siddharthkr170/VirtualMouse/blob/main/LICENSE" target="_blank">License</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Siddharth Kumar. All Rights Reserved. Built for BHARAT.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
