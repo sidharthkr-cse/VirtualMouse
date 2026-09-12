@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>🚀 VirtualMouse</h1>
+  <h1>🖱️ VirtualMouse</h1>
   <p><b>Revolutionizing Human-Computer Interaction</b></p>
   <p>Control your entire PC hands-free using Advanced AI Facial Tracking & Zero-Delay Voice Dictation.</p>
 
